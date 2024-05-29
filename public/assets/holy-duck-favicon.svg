@@ -1,0 +1,7 @@
+<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="9.5" cy="9.5" r="9.5" fill="black"/>
+<path d="M14 3V4H8V3H14Z" fill="#CACACA"/>
+<rect width="1" height="1" transform="matrix(-1 0 0 1 12 7)" fill="black"/>
+<path d="M13 7H14V8H16V9H15V10H12V9H13V7Z" fill="#FF833F"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13 5V6H14V7H13V9H12V10H13V11H14V12H15V14H14V15H13V16H6V15H5V14H4V12H3V10H5V11H6V10H9V9H8V6H9V5H13ZM11 7V8H12V7H11Z" fill="#FFC700"/>
+</svg>
