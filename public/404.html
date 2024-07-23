@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      http-equiv="refresh"
+      content="3;url=/"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/svg+xml"
+      href="/assets/holy-duck-favicon.svg"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/remedy.css"
+    />
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        background: #000;
+        color: #fff;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15vh;
+      }
+
+      hgroup {
+        text-align: center;
+        margin-top: 3rem;
+      }
+
+      h1 {
+        font-size: 6.25rem;
+        margin: 0;
+      }
+
+      p {
+        color: #ffc700;
+        font-size: 3rem;
+        margin: 0 0 3.5rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: #000;
+        background-color: #fff;
+        font-size: 2rem;
+        display: block;
+        width: fit-content;
+        padding: 0.75rem 1.75rem;
+        border-radius: 2rem;
+        margin: 0 auto;
+      }
+
+      a:hover {
+        outline: 2px solid #fff;
+        background-color: #000;
+        color: #fff;
+      }
+
+      #eyes {
+        position: relative;
+        width: 200px;
+      }
+
+      /* pupils */
+      #eyes::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 30px;
+        left: 25px;
+        border-radius: 50%;
+        background-color: #000;
+        box-shadow: 125px 0 0 #000;
+        animation: pupil 2.5s infinite;
+      }
+
+      .eye {
+        display: inline-block;
+        width: 75px;
+        height: 80px;
+        transform: rotate(45deg);
+        border-radius: 50% 50% 50% 50%/45px 45px 45% 45%;
+        background-color: #fff;
+      }
+
+      .eye::after {
+        content: "";
+        position: absolute;
+        border-bottom: 2px solid #fff;
+        width: 70px;
+        height: 50px;
+        left: 0px;
+        bottom: -10px;
+        border-radius: 50%;
+      }
+      .eye.right {
+        float: right;
+        transform: rotate(-45deg);
+      }
+
+      .eye.right::after {
+        left: 5px;
+      }
+
+      @keyframes pupil {
+        0%,
+        30%,
+        55%,
+        90%,
+        100% {
+          transform: translate(0, 0);
+        }
+        10%,
+        25% {
+          transform: translate(0, 20px);
+        }
+        65% {
+          transform: translate(-20px, 0);
+        }
+        80% {
+          transform: translate(20px, 0);
+        }
+      }
+
+      @media (max-width: 400px) {
+        body {
+          transform: scale(0.75);
+        }
+      }
+    </style>
+    <title>Holy Duck | Page Not Found</title>
+  </head>
+  <body>
+    <div id="eyes">
+      <!-- Eyes CSS tweaked from an original work by https://github.com/vineethtrv -->
+      <div class="eye left"></div>
+      <div class="eye right"></div>
+    </div>
+
+    <hgroup>
+      <h1>404</h1>
+      <p>Page not found</p>
+      <a href="/">Go back</a>
+    </hgroup>
+  </body>
+</html>
